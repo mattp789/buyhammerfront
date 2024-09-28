@@ -49,8 +49,8 @@
 		try {
 			  const response = await axios({
 			  method: 'post',
-         	  url: 'http://localhost:8080/calculate',
-			  // url: 'https://buyhammer-muddy-lake-2945.fly.dev/calculate',
+         	//   url: 'http://localhost:8080/calculate',
+			  url: 'https://buyhammer-muddy-lake-2945.fly.dev/calculate',
 			  data: {
 				  dataitems,
 				  multiplier
