@@ -49,8 +49,8 @@
 		try {
 			  const response = await axios({
 			  method: 'post',
-        // url: 'http://localhost:8080/calculate',
-			  url: 'https://buyhammer-muddy-lake-2945.fly.dev/calculate',
+         	  url: 'http://localhost:8080/calculate',
+			  // url: 'https://buyhammer-muddy-lake-2945.fly.dev/calculate',
 			  data: {
 				  dataitems,
 				  multiplier
@@ -74,7 +74,7 @@
 	
 	<body>
 	<h1 class="h1" >Welcome to Buyhammer!</h1>
-	<h3 class="h3" style="padding-top: 10px">Copy paste your list from the AoS modbile app text in the box below to calculate the MSRP value.</h3>
+	<h3 class="h3" style="padding-top: 10px">Copy paste your list from the AoS mobile app text in the box below to calculate the MSRP value.</h3>
 	<h4 class="h4" style="padding-top: 10px">Note: This app cannot currently calculate reinforced units, so please enter each unit individually.</h4>
 	<div>
 	  <textarea style="margin: 15px;" class="textarea" placeholder="Paste your list here..." bind:value={data}></textarea>
